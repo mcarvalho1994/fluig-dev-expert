@@ -1,0 +1,7 @@
+function adicionarLinha() {
+	wdkAddChild("tb_aprovadores");
+}
+
+function excluirLinha(oElement) {
+	fnWdkRemoveChild(oElement);
+}

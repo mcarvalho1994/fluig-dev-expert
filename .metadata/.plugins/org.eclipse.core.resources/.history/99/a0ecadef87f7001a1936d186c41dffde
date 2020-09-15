@@ -1,0 +1,4 @@
+label.obrigatorio spam {
+	color : red;
+	font-weight : bold;
+}

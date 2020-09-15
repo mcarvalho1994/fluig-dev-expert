@@ -1,0 +1,4 @@
+label.obrigatorio {
+	color : red;
+	font-weight : bold;
+}

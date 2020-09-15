@@ -1,0 +1,38 @@
+function adicionarLinha() {
+	wdkAddChild("tb_aprovadores");
+}
+
+function excluirLinha(oElement) {
+	fnWdkRemoveChild(oElement);
+}
+
+function setSelectedZoomItem(selectedItem) {     
+	var obj = selectedItem.inputName;
+	
+	if(obj == "txt_pais_unidade") {
+		var inputName = "txt_estado_unidade";
+		var filterValues = "";
+		
+		var codPais = selectedItem.Sigla;
+		
+		filterValues += "filtroPais," + codPais;
+		
+		/*
+		 * 1º Parametro: Campo que queremos filrar
+		 * 2° Parametro: País -> Key, Value*/
+		reloadZoomFilterValues(inputName, filterValues);
+		
+	}
+
+}
+
+function removedZoomItem(removedItem) {
+	var obj = removedItem.inputName;
+	
+	if(obj == "txt_pais_unidade") {
+		var inputName = "txt_estado_unidade";
+		var filterValues = "";
+		
+		reloadZoomFilterValues(inputName, filterValues);
+	}
+}

@@ -1,0 +1,5 @@
+panel.aprovacao=Aprovadores
+cod.aprovador=Código do Aprovador
+nome.aprovador=Nome do Aprovador
+data.atualizacao=Data de atualização
+msg.aprovador.linhaObrigatoria=É necessário preencher ao menos um aprovador

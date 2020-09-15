@@ -1,0 +1,43 @@
+/* Dataset Offline
+ * Criar colunas e definir seus tipos
+ * String, Number, Date...
+ * Primary Key */
+function defineStructure() {
+
+}
+
+/* Dataset Offline
+ * Tipo de sincronização: Comum ou Jornalizada */
+function onSync(lastSyncDate) {
+/* Será chamada a integração JDBC, Rest ou SOAP */
+}
+
+/* Criar Dataset comum em javascript */
+function createDataset(fields, constraints, sortFields) {
+	
+	//Criar Dataset
+	var dataset = new DatasetBuilder.newDataset();
+	
+	//Adicionar as Colunas
+	dataset.addColumn("Sigla");
+	dataset.addColumn("Estado");
+	dataset.addColumn("Capital");
+	dataset.addColumn("Area");
+	
+	//Adicionar as Linhas
+	
+	dataset.addRow(new Array("AM", "Amazonas", "Manaus", 15321));
+	dataset.addRow(new Array("PA", "Pará", "Belém", 58621));
+	dataset.addRow(new Array("MT", "Mato Grosso", "Cuiabá", 165483));
+	dataset.addRow(new Array("TO", "Tocantins", "Palmas", 36521));
+	dataset.addRow(new Array("PI", "Piauí", "Teresina", 74521));
+	
+	//retorna o Dataset
+	return dataset;
+}
+
+/* Defirni-se a estrutura de integração mobile, por exemplo:
+ * Limitar a quantidade de colunas */
+function onMobileSync(user) {
+
+}

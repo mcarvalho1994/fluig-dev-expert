@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;Fluig Expert&apos;&#x0D;&#x0A;- Original project: &apos;Fluig Expert&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Aprovadores_en_US.properties&#x0D;&#x0A;     Aprovadores_es.properties&#x0D;&#x0A;     Aprovadores_pt_BR.properties" description="Delete elements" element1="forms/Aprovadores/Aprovadores_es.properties" element2="forms/Aprovadores/Aprovadores_pt_BR.properties" element3="forms/Aprovadores/Aprovadores_en_US.properties" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="3" stamp="1600190002708" subPackages="false" version="1.0"/>
+</session>

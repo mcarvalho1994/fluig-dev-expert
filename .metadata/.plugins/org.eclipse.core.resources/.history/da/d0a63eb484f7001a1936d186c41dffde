@@ -1,0 +1,7 @@
+function displayFields(form,customHTML){
+	form.setValue("txt_data_atualizacao", dataAgora());
+}
+
+function dataAgora() {
+	return new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm").format(new java.util.Date());
+}

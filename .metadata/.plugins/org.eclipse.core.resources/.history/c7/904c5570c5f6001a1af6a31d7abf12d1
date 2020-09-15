@@ -1,0 +1,18 @@
+function adicionarLinha() {
+	wdkAddChild("tb_aprovadores");
+}
+
+function excluirLinha(oElement) {
+	fnWdkRemoveChild(oElement);
+}
+
+$(document).ready(function($){
+	$("[data-contato]").mask("(99) 99999-999?9");
+	$("[data-contato]").on('change', function(){
+	    if($(this).val().length <= 14){
+	        $(this).mask("(99) 9999-9999?9");
+	    }else{
+	        $(this).mask("(99) 99999-999?9");
+	    }
+	});
+}
