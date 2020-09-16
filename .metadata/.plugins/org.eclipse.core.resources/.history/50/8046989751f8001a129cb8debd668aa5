@@ -1,0 +1,6 @@
+function servicetask33() {
+	
+	var codigo = "";
+	var descricao = "";
+	var tipo = "";
+}

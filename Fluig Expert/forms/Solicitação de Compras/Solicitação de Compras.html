@@ -12,7 +12,7 @@
 	<body>
 		<div class="fluig-style-guide">
 			<form name="form" role="form">
-				<div class="panel panel-primary">
+				<div class="panel panel-primary" id="panelSolicitante">
 				    <div class="panel-heading">
 				        <h3 class="panel-title">Solicitante</h3>
 				    </div>
@@ -22,21 +22,21 @@
 				    		<div class="col-md-4">
 				    			<div class="form-group">
 				    				<label class="control-label">Solicitante</label>
-				    				<input type="text" id="txt_solicitante" name="txt_solicitante" class="form-control">
+				    				<input type="text" id="txt_solicitante" name="txt_solicitante" class="form-control" readonly>
 				    			</div>
 				    		</div>
 
 				    		<div class="col-md-4">
 				    			<div class="form-group">
 				    				<label class="control-label">E-mail</label>
-				    				<input type="text" id="txt_solic_email" name="txt_solic_email" class="form-control">
+				    				<input type="text" id="txt_solic_email" name="txt_solic_email" class="form-control" readonly>
 				    			</div>
 				    		</div>
 				    		
 				    		<div class="col-md-4">
 				    			<div class="form-group">
 				    				<label class="control-label">Data</label>
-				    				<input type="text" id="txt_dt_solic" name="txt_dt_solic" class="form-control">
+				    				<input type="text" id="txt_dt_solic" name="txt_dt_solic" class="form-control" readonly>
 				    			</div>
 				    		</div>
 				        </div>
@@ -98,11 +98,11 @@
 				        	<div class="col-md-12">
 				        		<div class="form-group">
 				        			<div class="custom-radio custom-radio-primary">
-									    <input type="radio" name="tipoproduto" value="1" id="radio-1">
+									    <input type="radio" name="tipoproduto" value="MA" id="radio-1">
 									    <label for="radio-1">1 - Matéria Prima</label>
 									</div>
 									<div class="custom-radio custom-radio-success">
-									    <input type="radio" name="tipoproduto" value="2" id="radio-2">
+									    <input type="radio" name="tipoproduto" value="PA" id="radio-2">
 									    <label for="radio-2">2 - Produto Acabado</label>
 									</div>
 				        		</div>
@@ -184,7 +184,7 @@
 				</div>
 			</div>
 			
-			<div class="panel panel-primary">
+			<div class="panel panel-primary" id="panelAprovacao">
 				<div class="panel-heading">
 				    Aprovações
 				</div>
@@ -203,11 +203,11 @@
 			        		<br>
 			        		<div class="form-group">
 			        			<div class="custom-radio custom-radio-success">
-								    <input type="radio" name="comentarios" value="1" id="radio-sim-gestor">
+								    <input type="radio" name="aprov_gestor" value="sim" id="radio-sim-gestor">
 								    <label for="radio-sim-gestor">1 - Sim</label>
 								</div>
 								<div class="custom-radio custom-radio-danger">
-								    <input type="radio" name="comentarios" value="2" id="radio-nao-gestor">
+								    <input type="radio" name="aprov_gestor" value="nao" id="radio-nao-gestor">
 								    <label for="radio-nao-gestor">2 - Não</label>
 								</div>
 			        		</div>
@@ -216,7 +216,7 @@
 			        
 			        <hr>
 			        
-			        <div class="row">
+			        <div class="row" id="aprovacaoFinanceiro">
 			        	<div class="col-md-10">
 			        		<div class="form-group">
 			    				<label class="control-label">Justificativa Financeiro</label>
@@ -230,11 +230,11 @@
 			        		<br>
 			        		<div class="form-group">
 			        			<div class="custom-radio custom-radio-success">
-								    <input type="radio" name="comentarios" value="1" id="radio-sim-financeiro">
+								    <input type="radio" name="aprov_financeiro" value="sim" id="radio-sim-financeiro">
 								    <label for="radio-sim-financeiro">1 - Sim</label>
 								</div>
 								<div class="custom-radio custom-radio-danger">
-								    <input type="radio" name="comentarios" value="2" id="radio-nao-financeiro">
+								    <input type="radio" name="aprov_financeiro" value="nao" id="radio-nao-financeiro">
 								    <label for="radio-nao-financeiro">2 - Não</label>
 								</div>
 			        		</div>
@@ -243,7 +243,7 @@
 				</div>
 			</div>
 			
-			<div class="panel panel-primary">
+			<div class="panel panel-primary" id="panelProduto">
 				<div class="panel-heading">
 				    Registro de Produtos
 				</div>
