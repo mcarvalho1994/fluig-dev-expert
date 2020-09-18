@@ -1,0 +1,8 @@
+<div id="MyWidget_${instanceId}" class="super-widget wcm-widget-class fluig-style-guide" data-params="MyWidget.instance()">
+
+	<div id="grafico_${instanceId}"></div>
+</div>
+
+<!-- Script para ler dataset -->
+<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+

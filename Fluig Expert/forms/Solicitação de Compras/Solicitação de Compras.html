@@ -22,14 +22,26 @@
 				    		<div class="col-md-4">
 				    			<div class="form-group">
 				    				<label class="control-label">Solicitante</label>
-				    				<input type="text" id="txt_solicitante" name="txt_solicitante" class="form-control" readonly>
+				    				<input type="text" id="txt_solicitante" name="txt_solicitante" class="form-control" readonly
+				    				data-protection="Nome do usuário"
+				    				data-protection-anonymizable="true"
+				    				data-protection-sensitive="false"
+				    				data-protection-name
+				    				data-protection-class-contract="O campo nome é apenas para ser exibido no formulário"
+				    				>
 				    			</div>
 				    		</div>
 
 				    		<div class="col-md-4">
 				    			<div class="form-group">
 				    				<label class="control-label">E-mail</label>
-				    				<input type="text" id="txt_solic_email" name="txt_solic_email" class="form-control" readonly>
+				    				<input type="text" id="txt_solic_email" name="txt_solic_email" class="form-control" readonly
+				    				data-protection="E-mail do usuário"
+				    				data-protection-anonymizable="false"
+				    				data-protection-sensitive="false"
+				    				data-protection-mail
+				    				data-protection-class-contract="O campo e-mail é apenas para ser exibido no formulário"
+				    				>
 				    			</div>
 				    		</div>
 				    		
